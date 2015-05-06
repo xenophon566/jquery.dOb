@@ -1,4 +1,4 @@
-jquery.dOb Project
+jquery.dOb
 =========
 
 ###jQuery.dOb project under the MIT License
