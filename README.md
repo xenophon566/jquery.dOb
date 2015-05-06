@@ -1,21 +1,21 @@
 dOb
 =========
 
-###jQuery.dOb project under the MIT License
+### jQuery.dOb project under the MIT License
 
-####Name 
+#### Name 
 jquery.dOb
 
-####Type 
+#### Type 
 Plugin
 
-####Feature 
-1. easy to use in your project
-2. dropdown menu
-3. easy to choosing birthday
+#### Feature 
+1. easy to use in your project.
+2. dropdown menu.
+3. easy to choosing birthday.
 
-####Base on
+#### Base on
 Javascript, JQuery
 
-####License
-under the MIT License <p>Copyright (c) 2013 Shawn Wu
+#### License
+under the MIT License Copyright(c) 2013 Shawn Wu
