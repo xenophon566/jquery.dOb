@@ -1,10 +1,10 @@
 jquery.dOb Project
 =========
 
-###This is my jquery.dOb project under the MIT License
+###jQuery.dOb project under the MIT License
 
 ####Name 
-jquery.dOb Plugin
+jquery.dOb
 
 ####Type 
 Jquery Plugin
@@ -16,9 +16,6 @@ Jquery Plugin
 
 ####Base on
 Javascript, JQuery
-
-####DEMO
-Demo in <a href="http://www.water-start.net:3355/jquery.dOb/dOb.html">DEMO</a> website
 
 ####License
 under the MIT License <p>Copyright (c) {{2013 Shawn Wu}}</p>
