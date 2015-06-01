@@ -1,18 +1,17 @@
 dOb
 =========
 
-### jQuery.dOb project under the MIT License
+### jQuery.dOb project
 
-#### Name 
-jquery.dOb
+#### Describe
+dOb is a date of birth plugin.
 
 #### Type 
-Plugin
+Frontend Plugin
 
 #### Feature 
-1. easy to use in your project.
+1. easy to use.
 2. dropdown menu.
-3. easy to choosing birthday.
 
 #### Base on
 Javascript, JQuery
