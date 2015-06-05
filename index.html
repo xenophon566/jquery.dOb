@@ -7,8 +7,36 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <title>Jquery.dob by xenophon566</title>
+    
+    <script type="text/javascript" src="javascripts/_jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.dOb.js"></script>
+    
+    <style>
+    p a {
+        text-decoration: none;
+        color: rgb(155, 93, 52);
+    }
+    .textbox {
+        background-color: white;
+        border: 1px solid;
+        width: 50%;
+    }
+    </style>
+    
+    <script>
+    $(function(){
+        $("#myBirthDate").dOb({
+            from_Y: 1911,	//from year(default: 1911)
+            to_Y: 	6,		//to year(default: 10)
+            digi: 	2		//display digits(default: 2)
+        });
+    });
+    function myBirthDate() {
+        alert( $("#dOb_Y").val() +'/'+ $("#dOb_M").val() +'/'+ $("#dOb_D").val() );
+    }
+    </script>
+    
+    <title>My dOb</title>
   </head>
 
   <body>
@@ -30,6 +58,13 @@
       <section id="main_content">
         <h1>
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h1>
+
+<div id="myBirthDate">
+	<select id="dOb_Y"><option value="1982">1982</option></select>
+	<select id="dOb_M"><option value="3">03</option></select>
+	<select id="dOb_D"><option value="23">23</option></select>
+</div><br/>
+<input type="button" value="dOb" onClick="myBirthDate();">
 
 <h1>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
