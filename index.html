@@ -3,42 +3,12 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    
-    <script type="text/javascript" src="javascripts/_jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.dOb.js"></script>
-    
-    <style>
-    p a {
-        text-decoration: none;
-        color: rgb(155, 93, 52);
-    }
-    .textbox {
-        background-color: white;
-        border: 1px solid;
-        width: 50%;
-    }
-    </style>
-    
-    <script>
-    $(function(){
-        $("#myBirthDate").dOb({
-            from_Y: 1911,	//from year(default: 1911)
-            to_Y: 	6,		//to year(default: 10)
-            digi: 	2		//display digits(default: 2)
-        });
-    });
-    function myBirthDate() {
-        alert( $("#dOb_Y").val() +'/'+ $("#dOb_M").val() +'/'+ $("#dOb_D").val() );
-    }
-    </script>
-    
-    <title>My dOb</title>
+
+    <title>Jquery.dob by xenophon566</title>
   </head>
 
   <body>
@@ -46,7 +16,7 @@
     <header>
       <div class="container">
         <h1>Jquery.dob</h1>
-        <h2>date of birthday jquery Project</h2>
+        <h2>date of birthday</h2>
 
         <section id="downloads">
           <a href="https://github.com/xenophon566/jquery.dOb/zipball/master" class="btn">Download as .zip</a>
@@ -59,18 +29,10 @@
     <div class="container">
       <section id="main_content">
         <h1>
-<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h1>
-
-<div id="myBirthDate">
-	<select id="dOb_Y"><option value="1982">1982</option></select>
-	<select id="dOb_M"><option value="3">03</option></select>
-	<select id="dOb_D"><option value="23">23</option></select>
-</div><br/>
-<input type="button" value="dOb" onClick="myBirthDate();">
-<a style="text-decoration:none;" href="http://xenophon566.github.io/demo/jquery.dOb/">to Jquery.dob Demo</a>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h1>
 
 <h1>
-<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h1>
 
 <p>dOb.js is a dropdown menu to choosing your date of birthday. It getting start as following : <br></p>
 
@@ -83,16 +45,16 @@ $("#myBirthDate").dOb({
 </pre></div>
 
 <p>$("element").dOb(); </p><h4>
-<a id="getting-start-the-plugin" class="anchor" href="#getting-start-the-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting start the plugin</h4> <br>
+<a id="getting-start-the-plugin" class="anchor" href="#getting-start-the-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting start the plugin</h4> <br>
 from_Y: 1911 (starting from 1911) <h4>
-<a id="from-which-year" class="anchor" href="#from-which-year" aria-hidden="true"><span class="octicon octicon-link"></span></a>From which year</h4> <br>
+<a id="from-which-year" class="anchor" href="#from-which-year" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From which year</h4> <br>
 to_Y: 6 (to 6 years ago of this year) <h4>
-<a id="to-which-year" class="anchor" href="#to-which-year" aria-hidden="true"><span class="octicon octicon-link"></span></a>To which year</h4> <br>
+<a id="to-which-year" class="anchor" href="#to-which-year" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To which year</h4> <br>
 digi: 2 (least 2 digits display) <h4>
-<a id="padding-zero-in-front-of-digits" class="anchor" href="#padding-zero-in-front-of-digits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Padding zero in front of digits</h4> <br>
+<a id="padding-zero-in-front-of-digits" class="anchor" href="#padding-zero-in-front-of-digits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Padding zero in front of digits</h4> <br>
 
 <h1>
-<a id="document" class="anchor" href="#document" aria-hidden="true"><span class="octicon octicon-link"></span></a>Document</h1>
+<a id="document" class="anchor" href="#document" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Document</h1>
 
 <p><b>HTML format as following :</b> <br>
 <code>&lt;div id="myBirthDate"&gt;</code> <br>
@@ -111,36 +73,33 @@ digi: 2 (least 2 digits display) <h4>
 <p><br><br></p>
 
 <h1>
-<a id="dob" class="anchor" href="#dob" aria-hidden="true"><span class="octicon octicon-link"></span></a>dOb</h1>
-
-<h3>
-<a id="jquerydob-project" class="anchor" href="#jquerydob-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.dOb project</h3>
+<a id="dob" class="anchor" href="#dob" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dOb</h1>
 
 <h4>
-<a id="describe" class="anchor" href="#describe" aria-hidden="true"><span class="octicon octicon-link"></span></a>Describe</h4>
-
-<p>dOb is a date of birth plugin.</p>
-
-<h4>
-<a id="type" class="anchor" href="#type" aria-hidden="true"><span class="octicon octicon-link"></span></a>Type</h4>
+<a id="type" class="anchor" href="#type" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Type</h4>
 
 <p>Frontend Plugin</p>
 
 <h4>
-<a id="feature" class="anchor" href="#feature" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feature</h4>
+<a id="describe" class="anchor" href="#describe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Describe</h4>
+
+<p>For Date of Birth.</p>
+
+<h4>
+<a id="feature" class="anchor" href="#feature" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feature</h4>
 
 <ol>
 <li>easy to use.</li>
-<li>dropdown menu.</li>
+<li>dropdown menu style.</li>
 </ol>
 
 <h4>
-<a id="base-on" class="anchor" href="#base-on" aria-hidden="true"><span class="octicon octicon-link"></span></a>Base on</h4>
+<a id="base-on" class="anchor" href="#base-on" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Base on</h4>
 
 <p>Javascript, JQuery</p>
 
 <h4>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h4>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h4>
 
 <p>under the MIT License Copyright(c) 2013 Shawn Wu</p>
       </section>
