@@ -1,18 +1,11 @@
-dOb
+My dOb
 =========
 
-#### Type
-Frontend Plugin
-
 #### Describe
-For Date of Birth.
-
-#### Feature
-1. easy to use.
-2. dropdown menu style.
+Date of Birth selected
 
 #### Base on
-Javascript, JQuery
+JQuery
 
 #### License
-under the MIT License Copyright(c) 2013 Shawn Wu
+MIT License Copyright(c) 2013 Shawn Wu
