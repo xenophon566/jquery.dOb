@@ -1,11 +1,8 @@
-My dOb
+jQuery.dOb
 =========
 
-#### Describe
-Date of Birth selected
+##### Describe
+get date of birth (html select option)
 
-#### Base on
-JQuery
-
-#### License
+##### License
 MIT License Copyright(c) 2013 Shawn Wu
