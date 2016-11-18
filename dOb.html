@@ -1,94 +1,76 @@
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>My dOb</title>
-<script type="text/javascript" src="js/_jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.dOb.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dropdown dOb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="lib/_jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dOb.js"></script>
+    <script>
+    $(function() {
+        $("#myBirthDate").dOb({
+            dOb_Y: '#dOb_Y', // element year
+            dOb_M: '#dOb_M', // element month
+            dOb_D: '#dOb_D', // element day
+            from_Y: 1982, // from year (default:1911)
+            to_Y: 2014, // to year (default:2013)
+            isPadding: true // is padding zero (default:true)
+        });
+    });
+
+    function myBirthDate() {
+        alert($("#dOb_Y").val() + '/' + $("#dOb_M").val() + '/' + $("#dOb_D").val());
+    }
+    </script>
 </head>
-<body style="background-color:#DDD;">
-<style>
-p a {
-	text-decoration: none;
-	color: rgb(155, 93, 52);
-}
-.textbox {
-	background-color: white;
-	border: 1px solid;
-	width: 50%;
-}
-</style>
-<script>
-$(function(){
-	$("#myBirthDate").dOb({
-		from_Y: 1911,	//from year(default: 1911)
-		to_Y: 	6,		//to year(default: 10)
-		digi: 	2		//display digits(default: 2)
-	});
-});
-function myBirthDate() {
-	alert( $("#dOb_Y").val() +'/'+ $("#dOb_M").val() +'/'+ $("#dOb_D").val() );
-}
-</script>
 
-<section id="demo">		<!--section demo-->
-<h1>Demo</h1>
-<div id="myBirthDate">
-	<select id="dOb_Y"><option value="1982">1982</option></select>
-	<select id="dOb_M"><option value="3">03</option></select>
-	<select id="dOb_D"><option value="23">23</option></select>
-</div><br/>
-<input type="button" value="dOb" onClick="myBirthDate();">
-</section><hr>
-
-<section id="start">	<!--section start-->
-<h1>Getting Started</h1>
-<p>
-dOb.js is a dropdown menu to choosing your date of birthday. It getting start as following : <br>
-<div class="textbox"><pre>
-$("#myBirthDate").dOb({
-	<b>from_Y: 1911,	//from year(default: 1911)</b>
-	<b>to_Y: 6, 	//to year(default: 10)</b>
-	<b>digi: 2		//display digits(default: 2)</b>
-});
-</pre></div>
-<h4>Getting start the plugin</h4> $("element").dOb();
-<h4>Calculate from which year</h4> from_Y: 1911 ( start from 1911 )
-<h4>Calculate to which year</h4> to_Y: 6 ( ended in 6 years ago of this year )
-<h4>Padding zero in front of digits</h4> digi: 2 ( display least 2 digits )
-</p>
-</section><hr>
-
-<section id="document">	<!--section document-->
-<h1>Document</h1>
-<p>
-HTML format as following : <br>
-<div class="textbox">
-<xmp><div id="myBirthDate"></xmp>
-<xmp>	<select id="dOb_Y"><option value="1982">1982</option></select></xmp>
-<xmp>	<select id="dOb_M"><option value="3">03</option></select></xmp>
-<xmp>	<select id="dOb_D"><option value="23">23</option></select></xmp>
-<xmp></div></xmp>
-</div>
-<p><b>No.1 </b>Select id ( dOb_Y, dOb_M and dOb_D ) can not be changed.</p>
-<p><b>No.2 </b>The default ( Year, Month and Day ) is set directly in value field.</p>
-<p><b>No.3 </b>If the default value unnormal then auto setting the date of the first set.</p>
-<p><b>No.4 </b>We can setting non-numeric to default. ex."----" or blank.</p>
-</p>
-</section><hr>
-
-<section id="contact">	<!--section contact-->
-<h1>Contact</h1>
-<p><b>dOb.js was produced by Shawn Wu in 20131119</b></p>
-<p>
-@<b>Wu Shang En</b> on <a href="https://www.facebook.com/shangen.wu">Facebook</a> 
-or <a href="https://twitter.com/WuShangEn">Twitter</a>
-</p>
-<p style="text-decoration:none;">
-@This project under the <a href="_mitLicense.html">MIT License</a>
-</p>
-<p style="text-decoration:none;">
-@Fork me on <a href="https://github.com/xenophon566">Github</a>
-</p>
-</section><hr>
+<body>
+    <section id="demo">
+        <h1>Demo</h1>
+        <div id="myBirthDate" class="myBirthDate">
+            <select id="dOb_Y">
+                <option value="1982">1982</option>
+            </select>
+            <select id="dOb_M">
+                <option value="3">03</option>
+            </select>
+            <select id="dOb_D">
+                <option value="23">23</option>
+            </select>
+        </div>
+        <input type="button" value="dOb" onClick="myBirthDate();">
+    </section>
+    <hr>
+    <section id="start">
+        <h1>Getting Started</h1>
+        <p>
+            Dropdown menu calendar. Getting start as following : <b>$("element").dOb();</b>
+            <br>
+            <div class="textbox">
+                $("#myBirthDate").dOb({
+                <br>
+                <b>&emsp;from_Y: 1911,</b> // from which year(default: 1911)
+                <br>
+                <b>&emsp;to_Y: 2013,</b> // to which year(default: 2013)
+                <br>
+                <b>&emsp;isPadding: true</b> // is padding zero(default: true)
+                <br> });
+                <br>
+            </div>
+        </p>
+    </section>
+    <hr>
+    <section id="note">
+        <h1>Note</h1>
+        <p>
+            <div class="textbox">
+                <ol>
+                    <li>Set default value Year, Month and Day on options directly.</li>
+                    <li>Accepts Non-numeric ex."----" or blank.</li>
+                </ol>
+            </div>
+        </p>
+    </section>
 </body>
+
 </html>
