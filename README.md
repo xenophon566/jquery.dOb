@@ -2,7 +2,7 @@ jQuery.dOb
 =========
 
 ##### Describe
-get date of birth (html select option)
+date of birth (dropdown menu)
 
 ##### License
 MIT License Copyright(c) 2013 Shawn Wu
