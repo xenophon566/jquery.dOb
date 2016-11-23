@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <title>Jquery.dob by xenophon566</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/xenophon566/jquery.dOb">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/xenophon566/jquery.dOb/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/xenophon566/jquery.dOb/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <header>
-      <div class="container">
-        <h1>Jquery.dob</h1>
-        <h2>date of birthday</h2>
+    <div class="wrapper">
 
-        <section id="downloads">
-          <a href="https://github.com/xenophon566/jquery.dOb/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/xenophon566/jquery.dOb/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/xenophon566/jquery.dOb" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <section>
+        <div id="title">
+          <h1>Jquery.dob</h1>
+          <p>date of birthday</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/xenophon566">xenophon566</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-    <div class="container">
-      <section id="main_content">
         <h1>
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h1>
 
@@ -36,46 +46,33 @@
 <h1>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h1>
 
-<p>dOb.js is a dropdown menu to choosing your date of birthday. It getting start as following : <br></p>
+<p>Dropdown menu for date choosing. As following : <br></p>
 
 <div><pre>
 $("#myBirthDate").dOb({
-    <b>from_Y: 1911,    //from year(default: 1911)</b>
-    <b>to_Y: 6,     //to year(default: 10)</b>
-    <b>digi: 2      //display digits(default: 2)</b>
+    <b>dOb_Y: '#dOb_Y', // element year</b>
+    <b>dOb_M: '#dOb_M', // element month</b>
+    <b>dOb_D: '#dOb_D', // element day</b>  
+    <b>from_Y: 1911, //from year(default: 1911)</b>
+    <b>to_Y: 2013, //to year(default: 2013)</b>
+    <b>isPadding: true //padding zero(default: true)</b>
 });
 </pre></div>
-
-<p>$("element").dOb(); </p><h4>
-<a id="getting-start-the-plugin" class="anchor" href="#getting-start-the-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting start the plugin</h4> <br>
-from_Y: 1911 (starting from 1911) <h4>
-<a id="from-which-year" class="anchor" href="#from-which-year" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From which year</h4> <br>
-to_Y: 6 (to 6 years ago of this year) <h4>
-<a id="to-which-year" class="anchor" href="#to-which-year" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To which year</h4> <br>
-digi: 2 (least 2 digits display) <h4>
-<a id="padding-zero-in-front-of-digits" class="anchor" href="#padding-zero-in-front-of-digits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Padding zero in front of digits</h4> <br>
 
 <h1>
 <a id="document" class="anchor" href="#document" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Document</h1>
 
-<p><b>HTML format as following :</b> <br>
+<p>HTML as following : <br>
 <code>&lt;div id="myBirthDate"&gt;</code> <br>
     </p><blockquote> <code>&lt;select id="dOb_Y"&gt;&lt;option value="1982"&gt;1982&lt;/option&gt;&lt;/select&gt;</code> </blockquote><br>
     <blockquote> <code>&lt;select id="dOb_M"&gt;&lt;option value="3"&gt;03&lt;/option&gt;&lt;/select&gt;</code> </blockquote><br>
     <blockquote> <code>&lt;select id="dOb_D"&gt;&lt;option value="23"&gt;23&lt;/option&gt;&lt;/select&gt;</code> </blockquote><br>
-<code>&lt;/div&gt;</code> <br>
-
-<ul>
-<li><b>Select id ( dOb_Y, dOb_M and dOb_D ) can not be changed.</b></li>
-<li><b>The default value ( Year, Month and Day ) is fill in the field directly.</b></li>
-<li><b>If the default value is unnormal, auto convert the date of the first set.</b></li>
-<li><b>You can set non-numeric to default. ex."----" or blank.</b></li>
-</ul>
-
-<p><br></p>
+<code>&lt;/div&gt;</code>
+<br>
       </section>
-    </div>
 
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
