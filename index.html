@@ -12,15 +12,11 @@
             dOb_Y: '#dOb_Y', // element year
             dOb_M: '#dOb_M', // element month
             dOb_D: '#dOb_D', // element day
-            from_Y: 1982, // from year (default:1911)
-            to_Y: 2014, // to year (default:2013)
-            isPadding: true // is padding zero (default:true)
+            from_Y: 2010, // from year (default: 2000)
+            to_Y: 2016, // to year (default: 2013)
+            isPadding: true // is padding zero (default: true)
         });
     });
-
-    function myBirthDate() {
-        alert($("#dOb_Y").val() + '/' + $("#dOb_M").val() + '/' + $("#dOb_D").val());
-    }
     </script>
 </head>
 
@@ -29,17 +25,17 @@
         <h1>Demo</h1>
         <div id="myBirthDate" class="myBirthDate">
             <select id="dOb_Y">
-                <option value="1982">1982</option>
+                <option value="2012">2012</option>
             </select>
             <select id="dOb_M">
-                <option value="3">03</option>
+                <option value="02">02</option>
             </select>
             <select id="dOb_D">
-                <option value="23">23</option>
+                <option value="08">28</option>
             </select>
         </div>
-        <input type="button" value="dOb" onClick="myBirthDate();">
     </section>
+    <br>
     <hr>
     <section id="start">
         <h1>Getting Started</h1>
@@ -49,7 +45,13 @@
             <div class="textbox">
                 $("#myBirthDate").dOb({
                 <br>
-                <b>&emsp;from_Y: 1911,</b> // from which year(default: 1911)
+                <b>&emsp;dOb_Y: '#dOb_Y',</b> // element year
+                <br>
+                <b>&emsp;dOb_M: '#dOb_M',</b> // element month
+                <br>
+                <b>&emsp;dOb_D: '#dOb_D',</b> // element day
+                <br>
+                <b>&emsp;from_Y: 2000,</b> // from which year(default: 2000)
                 <br>
                 <b>&emsp;to_Y: 2013,</b> // to which year(default: 2013)
                 <br>
@@ -66,7 +68,7 @@
             <div class="textbox">
                 <ol>
                     <li>Default values on select option's value directly.</li>
-                    <li>any type values ex. 2013, "----" or blank.</li>
+                    <li>any type values ex. 2013, "----" or "YYYY".</li>
                 </ol>
             </div>
         </p>
